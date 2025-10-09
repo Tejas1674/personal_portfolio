@@ -8,6 +8,47 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222 47% 11%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    --primary: 263 70% 60%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 189 85% 55%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 4% 46%;
+
+    --accent: 263 70% 95%;
+    --accent-foreground: 263 70% 40%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 263 70% 60%;
+
+    --radius: 0.75rem;
+
+    /* Gradient tokens */
+    --gradient-primary: linear-gradient(135deg, hsl(263 70% 60%), hsl(189 85% 55%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(240 5% 98%));
+    --gradient-hero: linear-gradient(to bottom right, hsl(263 70% 98%), hsl(189 85% 95%), hsl(240 5% 98%));
+    
+    /* Shadow tokens */
+    --shadow-glow: 0 0 40px hsla(263, 70%, 60%, 0.15);
+    --shadow-card: 0 10px 30px -10px hsla(263, 70%, 60%, 0.15);
+  }
+
+  .dark {
     --background: 222 47% 11%;
     --foreground: 210 40% 98%;
 
@@ -36,14 +77,12 @@ All colors MUST be HSL.
     --input: 217 33% 22%;
     --ring: 263 70% 60%;
 
-    --radius: 0.75rem;
-
-    /* Gradient tokens */
+    /* Gradient tokens for dark mode */
     --gradient-primary: linear-gradient(135deg, hsl(263 70% 60%), hsl(189 85% 55%));
     --gradient-card: linear-gradient(145deg, hsl(222 47% 15%), hsl(222 47% 18%));
     --gradient-hero: linear-gradient(to bottom right, hsl(222 47% 11%), hsl(263 70% 20%), hsl(189 85% 25%));
     
-    /* Shadow tokens */
+    /* Shadow tokens for dark mode */
     --shadow-glow: 0 0 40px hsla(263, 70%, 60%, 0.3);
     --shadow-card: 0 10px 30px -10px hsla(263, 70%, 60%, 0.2);
   }
@@ -77,11 +116,15 @@ All colors MUST be HSL.
   }
 
   .card-hover {
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .card-hover:hover {
-    transform: translateY(-4px);
+    transform: translateY(-8px) scale(1.02);
     box-shadow: var(--shadow-card);
+  }
+
+  .theme-transition {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
   }
 }
