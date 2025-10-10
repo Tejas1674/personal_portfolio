@@ -35,7 +35,7 @@ const Experience = () => {
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Calendar className="w-4 h-4" />
-                  <span className="text-sm">Present</span>
+                  <span className="text-sm">May 2024 - Present</span>
                 </div>
               </div>
               
