@@ -21,7 +21,7 @@ const Hero = () => {
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Backend Developer specializing in <span className="text-foreground font-medium">ASP.NET Core 6/* </span> and{" "}
+            Backend Developer specializing in <span className="text-foreground font-medium">ASP.NET Core</span> and{" "}
             <span className="text-foreground font-medium">React.js</span> with 2+ years of hands-on experience building scalable applications
           </p>
           
@@ -85,13 +85,13 @@ const Hero = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8  transform -translate-x-1/2 animate-bounce">
+      {/* <div className="absolute bottom-8  transform -translate-x-1/2 animate-bounce">
         <a href="#about">
           <div className="w-6 h-10 border-2 border-primary rounded-full flex justify-center">
             <div className="w-1 h-3 bg-primary rounded-full mt-2 animate-float"></div>
           </div>
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };
