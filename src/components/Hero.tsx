@@ -21,8 +21,8 @@ const Hero = () => {
           </p>
           
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Backend Developer specializing in <span className="text-foreground font-medium">ASP.NET Core</span> and{" "}
-            <span className="text-foreground font-medium">React.js</span> with 1.3 years of hands-on experience building scalable applications
+            Backend Developer specializing in <span className="text-foreground font-medium">ASP.NET Core 6/* </span> and{" "}
+            <span className="text-foreground font-medium">React.js</span> with 2+ years of hands-on experience building scalable applications
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
